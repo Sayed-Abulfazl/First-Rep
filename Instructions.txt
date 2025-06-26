@@ -1,0 +1,52 @@
+1. for Create Local Repository in a folder should enter ( git init )
+
+
+2. for cretae Remote Repositiry must enter these code for link between eachother
+
+// conecting github to local project
+git remote add origin nameOfRemmoteRepositiry
+
+git branch -M main
+git pull -rebase origin main
+
+// sending project to github
+git push -u origin main
+
+3. for introducing 
+
+git config --global user.name "AnyName"
+git config --global user.email "anyEmail"
+
+
+4. for adding file to staged  - changes ---> staged
+git add namefile
+
+// for all files
+git add .   || git add --all
+
+
+5. for restoring file to changes  -  staged ---> changes
+git restore --staged filename
+
+// for all files
+git restore --staged .
+
+
+6. for removing or discarding the files that we created those
+git clean -file
+
+
+7. for restore to firstly for texts of files that were ago,we donot created like readme.txt
+git restore . 
+
+
+8. for seeing situation
+git status
+
+
+9. for commit files 
+git commit -m "Any Message"
+
+
+10. for seeing situation of commits  دیدن تاریخچه تغییرات
+git log
